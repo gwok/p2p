@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sso-serviceimpl:war">
+    <output-path>$PROJECT_DIR$/sso/sso-serviceimpl/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sso-serviceimpl</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="sso-serviceimpl-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="sso-serviceimpl:war exploded" />
+    </root>
+  </artifact>
+</component>

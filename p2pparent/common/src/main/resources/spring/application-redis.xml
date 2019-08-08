@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+    <!-- 扫描注解 -->
+    <context:component-scan base-package="com.gwokgwok.p2p.jedis"/>
+
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!--最大连接数  -->
+        <property name="maxTotal" value="1024"/>
+        <!-- 最大等待时间 -->
+        <property name="maxWaitMillis" value="100000"/>
+        <!-- 最大空闲 -->
+        <property name="maxIdle" value="512"/>
+        <!-- 最小空闲 -->
+        <property name="minIdle" value="20"/>
+    </bean>
+
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool" destroy-method="close">
+        <constructor-arg name="poolConfig" ref="poolConfig"/>
+        <constructor-arg name="host" value="192.168.221.10"/>
+        <constructor-arg name="port" value="6379"/>
+    </bean>
+</beans>

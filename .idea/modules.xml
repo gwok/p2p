@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/p2pparent/common/common.iml" filepath="$PROJECT_DIR$/p2pparent/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2pparent/dao/dao.iml" filepath="$PROJECT_DIR$/p2pparent/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontdisplay/display-service/displayservice.iml" filepath="$PROJECT_DIR$/frontdisplay/display-service/displayservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontdisplay/display-serviceimpl/displayserviceimpl.iml" filepath="$PROJECT_DIR$/frontdisplay/display-serviceimpl/displayserviceimpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontdisplay/display-web/displayweb.iml" filepath="$PROJECT_DIR$/frontdisplay/display-web/displayweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontdisplay/frontdisplay.iml" filepath="$PROJECT_DIR$/frontdisplay/frontdisplay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2pparent/p2pparent.iml" filepath="$PROJECT_DIR$/p2pparent/p2pparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2pparent/piccode-web/piccodeweb.iml" filepath="$PROJECT_DIR$/p2pparent/piccode-web/piccodeweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2pparent/pojo/pojo.iml" filepath="$PROJECT_DIR$/p2pparent/pojo/pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso/sso.iml" filepath="$PROJECT_DIR$/sso/sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso/sso-serviceimpl/sso-serviceimpl.iml" filepath="$PROJECT_DIR$/sso/sso-serviceimpl/sso-serviceimpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso/sso-service/ssoservice.iml" filepath="$PROJECT_DIR$/sso/sso-service/ssoservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso/sso-web/ssoweb.iml" filepath="$PROJECT_DIR$/sso/sso-web/ssoweb.iml" />
+    </modules>
+  </component>
+</project>

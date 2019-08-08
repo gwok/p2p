@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="piccodeweb:war">
+    <output-path>$PROJECT_DIR$/p2pparent/piccode-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>piccodeweb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="piccode-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="piccodeweb:war exploded" />
+    </root>
+  </artifact>
+</component>

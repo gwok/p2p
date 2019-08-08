@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="dao" />
+        <module name="displayservice" />
+        <module name="displayserviceimpl" />
+        <module name="displayweb" />
+        <module name="piccodeweb" />
+        <module name="pojo" />
+        <module name="sso-serviceimpl" />
+        <module name="ssoservice" />
+        <module name="ssoweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="common" target="1.8" />
+      <module name="dao" target="1.8" />
+      <module name="displayservice" target="1.8" />
+      <module name="displayserviceimpl" target="1.8" />
+      <module name="displayweb" target="1.8" />
+      <module name="frontdisplay" target="1.8" />
+      <module name="p2pparent" target="1.8" />
+      <module name="piccodeweb" target="1.8" />
+      <module name="pojo" target="1.8" />
+      <module name="sso" target="1.8" />
+      <module name="sso-serviceimpl" target="1.8" />
+      <module name="ssoservice" target="1.8" />
+      <module name="ssoserviceimpl" target="1.8" />
+      <module name="ssoweb" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+    <context:component-scan base-package="com.gwokgwok.p2p.*.web"/>
+
+    <!--<mvc:annotation-driven&lt;!&ndash;conversion-service="conversionservice"&ndash;&gt;></mvc:annotation-driven>-->
+    <mvc:annotation-driven/>
+    <!-- 配置转换器对象 -->
+    <!--<bean id="conversionservice" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">-->
+        <!--<property name="converters">-->
+            <!--<set>-->
+                <!--&lt;!&ndash;  配置自定义日期转换器&ndash;&gt;-->
+                <!--<bean class="com.qianfeng.p2p.utils.MyDateConvert"></bean>-->
+            <!--</set>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--静态资源放行  -->
+    <!--<mvc:default-servlet-handler/>-->
+    <!-- 本服务的别名-->
+    <!--<dubbo:application name="display-web"/>-->
+
+    <!--<dubbo:registry address="127.0.0.1:2181" protocol="zookeeper"></dubbo:registry>-->
+    <!-- 需要消费的服务 -->
+    <!--<dubbo:reference interface="" id=""></dubbo:reference>-->
+    <!--<dubbo:reference interface="" id=""></dubbo:reference>-->
+</beans>

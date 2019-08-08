@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+    <bean  id="serializeConfig"  class="com.alibaba.fastjson.serializer.SerializeConfig"/>
+
+    <context:component-scan base-package="com.gwokgwok.p2p.sso.web"/>
+    <!--扫描处理器适配器和映射器  -->
+    <mvc:annotation-driven/>
+    <!-- 该机子的身份别名 -->
+    <dubbo:application name="sso-web"/>
+    <dubbo:registry address="zookeeper://192.168.221.10:2181"/>
+    <!-- 需要的服务 -->
+    <dubbo:reference interface="com.gwokgwok.p2p.sso.service.UserService" id="userServiceImpl"/>
+</beans>
